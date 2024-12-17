@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplayer Dot Game</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="gameContainer"></div>
+    <div id="videoContainer"></div>
+    <script src="/client.js"></script>
+    <style>
+        #gameContainer {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+        .dot {
+            position: absolute;
+            cursor: pointer;
+            z-index: 10;
+        }
+        #videoContainer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 20;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</body>
+</html>
